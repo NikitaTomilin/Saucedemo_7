@@ -3,11 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ProductsPage {
+public class ProductsPage{
     WebDriver driver;
     private final By title = By.cssSelector("[data-test = 'title']");
 
-    public ProductsPage(WebDriver driver) {
+    public ProductsPage(WebDriver driver){
         this.driver = driver;
     }
     public boolean pageTitleVisible(){
@@ -21,5 +21,4 @@ public class ProductsPage {
     public String currentUrl(){
         return driver.getCurrentUrl();
     }
-
 }

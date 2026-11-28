@@ -49,5 +49,4 @@ public class LoginTest extends BaseTest{
         assertTrue(loginPage.errorIsVisible());
         assertEquals(loginPage.errorText(),"Epic sadface: Username is required");
     }
-
 }

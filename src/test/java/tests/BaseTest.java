@@ -24,12 +24,10 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         loginPage = new LoginPage(driver);
         productsPage = new ProductsPage(driver);
-
     }
 
     @AfterEach
     public void tearDown() {
-
         driver.quit();
     }
 }
